@@ -1,0 +1,17 @@
+// 响应式配置，保留使用
+$designWidth: 1920;
+$designHeight: 1080;
+$baseUnit: 1/100;
+$widthHeightRatio: $designWidth / $designHeight;
+
+$color-light-blue: #99dced;
+$color-yellow: #fddc31;
+$border-blue: 1px solid #084f8e;
+
+@mixin background-setting($url, $width, $height) {
+  width: $width;
+  height: $height;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url($url);
+}
